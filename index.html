@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">AgroSustentável 2026</div>
+        <nav>
+            <a href="#tema">O Tema</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#simulador">Simulador Verde</a>
+            <a href="#equipe">Nossa Equipe</a>
+            <button id="btn-dark" onclick="alternarModoEscuro()">🌙 Modo Escuro</button>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>Equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+            <a href="#simulador" class="btn-principal">Testar Simulador</a>
+        </div>
+    </section>
+
+    <section id="tema" class="container">
+        <h2>O Desafio Agrinho 2026</h2>
+        <p>Produzir alimentos para uma população crescente sem esgotar os recursos naturais é o maior desafio da nossa geração. A tecnologia surge como a principal ponte para unir a eficiência econômica à responsabilidade ecológica.</p>
+    </section>
+
+    <section id="solucoes" class="bg-alternativo">
+        <div class="container">
+            <h2>Pilares do Campo Sustentável</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Gestão de Água</h3>
+                    <p>Uso de sensores de umidade no solo para irrigação de precisão, evitando o desperdício dos recursos hídricos.</p>
+                </div>
+                <div class="card">
+                    <h3>Energia Limpa</h3>
+                    <p>Implementação de painéis solares e biomassa nas propriedades para reduzir a dependência de combustíveis fósseis.</p>
+                </div>
+                <div class="card">
+                    <h3>Proteção do Solo</h3>
+                    <p>Rotação de culturas e plantio direto para manter os nutrientes da terra vivos por muito mais gerações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="container">
+        <h2>Simulador de Diagnóstico Verde</h2>
+        <p>Responda às perguntas abaixo para avaliar o nível de sustentabilidade da sua propriedade rural simulada:</p>
+        
+        <div class="formulario-simulador">
+            <label for="energia">Qual a principal fonte de energia da propriedade?</label>
+            <select id="energia">
+                <option value="0">Combustível Fóssil / Rede Elétrica Comum</option>
+                <option value="10">Energia Solar / Renovável</option>
+            </select>
+
+            <label for="agua">Como é feita a gestão da água/irrigação?</label>
+            <select id="agua">
+                <option value="0">Irrigação por calendário fixo (sem sensores)</option>
+                <option value="10">Irrigação inteligente automatizada (com sensores)</option>
+            </select>
+
+            <label for="residuos">O que é feito com os resíduos orgânicos?</label>
+            <select id="residuos">
+                <option value="0">Descarte comum ou queima</option>
+                <option value="10">Compostagem ou produção de biofertilizantes</option>
+            </select>
+
+            <button type="button" id="btn-analisar" onclick="calcularSustentabilidade()">Analisar Propriedade</button>
+        </div>
+
+        <div id="resultado" class="resultado-oculto">
+            <h3>Resultado da Análise</h3>
+            <div id="texto-resultado"></div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido com Orgulho no Paraná</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
