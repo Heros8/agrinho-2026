@@ -1,5 +1,3 @@
-# agrinho-2026
-
 # AgroSustentável 2026 - Projeto Agrinho paranaense
 
 > **Tema Oficial:** "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"
